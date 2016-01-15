@@ -1,0 +1,4 @@
+comment_reply: Balasan
+comment_replies: Balasan
+
+comment_reply_to_: Balasan untuk %s
