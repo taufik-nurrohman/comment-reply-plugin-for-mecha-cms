@@ -7,7 +7,7 @@ Version: 1.0.0
 
 > Menambahkan kemampuan untuk membalas komentar.
 
-Ini adalah plugin dasar, terutama digunakan untuk mengaktifkan bidang `$comment->parent` pada data _response_.
+Ini adalah plugin dasar, terutama digunakan untuk mengaktifkan bidang `$comment->parent` pada data _response_. Dengan plugin ini, Anda dapat membalas komentar para pengunjung baik melalui halaman _frontend_ maupun _backend_.
 
 ~~~ .no-highlight
 2016-01-15-17-14-08_2016-02-16-11-46-02_2016-02-14-10-33-26.txt
