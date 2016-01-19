@@ -7,7 +7,7 @@ if($config->is->post) {
     function do_response_reply($response) {
         global $speak;
         $prefix = File::B(File::D($response->path));
-        echo (Weapon::exist($prefix . '_footer') && Guardian::happy() ? ' / ' : "") . '<a class="a-reply" data-parent="' . $response->id . '" href="' . str_replace('&', '&amp;', HTTP::query('reply', $response->id)) . '#' . $prefix . '-form" title="' . Config::speak($prefix . '_reply_to_', $response->name) . '">' . $speak->reply . '</a>';
+        echo (Weapon::exist($prefix . '_footer') && Guardian::happy() ? ' / ' : "") . '<a class="a-reply" data-parent="' . $response->id . '" href="' . str_replace('&', '&amp;', HTTP::query('reply', $response->id)) . '#' . $prefix . '-form" title="' . Config::speak($prefix . '_reply_to_', Text::parse($response->name_raw, '->text')) . '">' . $speak->reply . '</a>';
     }
 
     function do_response_reply_css() {
